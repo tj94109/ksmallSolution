@@ -1,11 +1,13 @@
-#ifndef KSMALLTESTER_H
-#define KSMALLTESTER_H
+#ifndef KSMALL_TESTER_HPP
+#define KSMALL_TESTER_HPP
 
+#include "arrayTracker.h"
 
 class ksmallTester
 {
+private:
 public:
-    ksmallTester();
+  ksmallTester();
+  int testPartition(arrayTracker* testSubject, int pivotIndex);
 };
-
-#endif // KSMALLTESTER_H
+#endif /* KSMALL_TESTER_HPP */

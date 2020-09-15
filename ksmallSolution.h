@@ -1,11 +1,15 @@
-#ifndef KSMALLSOLUTION_H
-#define KSMALLSOLUTION_H
+#ifndef KSMALL_SOLUTION_HPP
+#define KSMALL_SOLUTION_HPP
 
+#include "arrayTracker.h"
 
 class ksmallSolution
 {
+private:
 public:
-    ksmallSolution();
-};
+  ksmallSolution();
 
-#endif // KSMALLSOLUTION_H
+  void arraySwap(arrayTracker* swappingArray, int indexA, int indexB);
+  int kSmallPartition(arrayTracker* unsortedArray);
+};
+#endif /* KSMALL_SOLUTION_HPP */
