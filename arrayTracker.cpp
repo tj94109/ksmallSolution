@@ -13,14 +13,12 @@ arrayTracker::arrayTracker() {
   useCount = 0;
 }
 
+
 arrayTracker::arrayTracker(int newSize) {
+
   useCount = 0;
-  receipt = (unsigned) time(0);
-  srand(receipt);
-  for(int i = 0; i < newSize; i++) {
-    items[i] = rand()%newSize;
-  }
   arraySize = newSize;
+
 }
 
 arrayTracker::arrayTracker(int newSize, int seedValue) {

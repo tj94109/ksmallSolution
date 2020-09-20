@@ -1,0 +1,36 @@
+Date
+
+-month: int
+-day: int
+-year int
+-dayName string
+	
++Date(month:int, day: int,year: int)
++advanceOneDay(): integer
++displayNumberFormat(): void 
++displayStringFormat(): void
++changeDate(month:int, day:int, year:int) : void
+
+// Function to advance date by one day
+advanceOneDay()
+	if (month == January, March, May, July, August, October, December && 
+		has between 1 and 31 days)
+		day++;
+		if (day > 31)
+			day = 1;
+			month++;
+
+	if (month == April, June, September or November && 
+		has between 1 and 30 days)
+		day++;
+		if (day > 31)
+			day = 1;
+			month++;
+	if (month == february  && day is between 1 and 29)
+		day++;
+		if(day is greater 28)
+		 	month ++;
+			day = 1;
+		else if (leap year && day is greater than 29)
+			month ++;
+			day =1;
